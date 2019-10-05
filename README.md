@@ -13,3 +13,13 @@ Types of data structures:
 #Matrix
 #Misc
 #Advanced Data Structure
+
+Basic operations:
+#Traversing
+#Searching
+#Insertion
+#Deletion
+#Sorting
+#Merging
+
+https://www.tutorialspoint.com/numpy/numpy_array_manipulation.htm

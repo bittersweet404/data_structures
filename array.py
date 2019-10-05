@@ -105,11 +105,31 @@ class NumpyArray:
         arr_indentity = np.eye(4, dtype=int)
         print("Indentuity matrix:\n", arr_indentity)
 
-    def traversing(arr_1d, arr_2d):
+    def traversing(self, arr_1d, arr_2d):
         for e in arr_1d: print(e)
+
+        # Create transpose of array
+        print("Transponse of an array - array.T:\n", arr_2d.T)
+        print("Original array:\n", arr_2d)
+
+        # iterating through array
+        for x in np.nditer(arr_2d, order = 'C'):
+            print("element in array by column is:", x)
+
+        # iterating through array row vise
+        for x in np.nditer(arr_2d, order = 'F'):
+            print("element in array by row is:", x)
+    #def Searching
+    #def Insertion
+    #def Deletion
+    #def Sorting
+    #def Merging
 
     def main(self):
         self.createarray()
+        a1=np.arange(0,20,2)
+        a2=a1.reshape(2,5)
+        self.traversing(a1,a2)
         #traversing()
 
 if __name__ == "__main__":
